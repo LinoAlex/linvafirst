@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "light-server"
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,7 @@
   "author": "Lino Alex A",
   "license": "ISC",
   "devDependencies": {
-    "@angular/cli": "^1.7.4"
+    "lite-server": "^2.3.0"
   },
-  "dependencies": {
-    "light-server": "^2.5.0"
-  }
+  "dependencies": {}
 }
