@@ -1,4 +1,19 @@
+function Greeter(greeting:string) {
+    this.greeting = greeting;
+}
 
+Greeter.prototype.greet = function() {
+    return "Hello, " + this.greeting;
+}
 
-let myName:string = "Lino Alex A"
-alert(myName);
+// Oops, we're passing an object when we want a string. This will print 
+// "Hello, [object Object]" instead of "Hello, world" without error.
+let greeter = new Greeter("string");  
+
+let button = document.createElement('button');
+button.textContent = "Say Hello";
+button.onclick = function() {
+    alert(greeter.greet());
+};
+
+document.body.appendChild(button);
